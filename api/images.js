@@ -9,13 +9,11 @@ if (!API_KEY) throw new Error('missing api key')
 if (!API_SECRET) throw new Error('missing api secret')
 if (!CLOUD_NAME) throw new Error('missing cloud name')
 
-async function main(req, res) {
-	res.setHeader('Access-Control-Allow-Origin', '*')
+export default async function handler(req, res) {
+	// res.setHeader('Access-Control-Allow-Origin', '*')
 	const response = await got(url, {
 		auth: `${API_KEY}:${API_SECRET}`,
 		json: true
 	})
-	return response.body
+	return res.json({images: response.body.resources})
 }
-
-export default main

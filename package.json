@@ -1,34 +1,15 @@
 {
-  "name": "cloudinary-endpoint",
+  "name": "torstenmosumgaard-api",
   "version": "1.0.0",
   "description": "A single HTTP endpoint to fetch images from a Cloudinary account",
-  "main": "index.js",
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "micro",
-    "dev": "micro-dev",
-    "deploy": "now --dotenv -e NODE_ENV=production",
-    "test": "xo"
   },
-  "author": "Oskar Rough",
-  "repository": "oskarrough/cloudinary-endpoint",
+  "repository": "oskarrough/torstenmosumgaard-api",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.3",
-    "got": "^8.0.1",
-    "micro": "10.0.1"
-  },
-  "devDependencies": {
-    "xo": "0.53.1",
-    "micro-dev": "^3.1.0"
-  },
-  "xo": {
-    "semicolon": false
-  },
-  "keywords": [
-    "micro",
-    "microservice",
-    "cloudinary"
-  ]
+    "got": "^8.0.1"
+  }
 }
