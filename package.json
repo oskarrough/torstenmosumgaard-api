@@ -1,15 +1,20 @@
 {
-  "name": "torstenmosumgaard-api",
-  "version": "1.0.0",
-  "description": "A single HTTP endpoint to fetch images from a Cloudinary account",
-  "private": true,
-  "type": "module",
-  "scripts": {
-  },
-  "repository": "oskarrough/torstenmosumgaard-api",
-  "license": "MIT",
-  "dependencies": {
-    "dotenv": "^16.0.3",
-    "got": "^8.0.1"
-  }
+	"name": "torstenmosumgaard-api",
+	"version": "1.0.0",
+	"description": "A single HTTP endpoint to fetch images from a Cloudinary account",
+	"private": true,
+	"type": "module",
+	"repository": "oskarrough/torstenmosumgaard-api",
+	"license": "MIT",
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.8.19",
+		"vitest": "~3.2.0",
+		"wrangler": "^4.22.0"
+	}
 }
