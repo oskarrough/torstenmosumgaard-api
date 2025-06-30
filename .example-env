@@ -4,6 +4,6 @@
 # reference these in your code with process.env.SECRET
 # note: .env is a shell file so there can't be spaces around '=
 
-API_KEY=123
-API_SECRET=123abc
-CLOUD_NAME=helloworld
+CLOUDINARY_API_KEY=123
+CLOUDINARY_API_SECRET=123abc
+CLOUDINARY_CLOUD_NAME=helloworld
